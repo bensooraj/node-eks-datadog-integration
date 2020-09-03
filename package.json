@@ -1,0 +1,14 @@
+{
+  "name": "node_web_app",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "Ben Sooraj <bensoorajm@gmail.com>",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "winston": "^3.3.3"
+  }
+}
