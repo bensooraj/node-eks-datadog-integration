@@ -69,7 +69,7 @@ datadog:
   ## Compared to the rules of GKE, dots are allowed whereas they are not allowed on GKE:
   ## https://cloud.google.com/kubernetes-engine/docs/reference/rest/v1beta1/projects.locations.clusters#Cluster.FIELDS.name
   #
-  clusterName:  # <CLUSTER_NAME>
+  clusterName:  esms-integrations-eks-cluster
 
   ## @param site - string - optional - default: 'datadoghq.com'
   ## The site of the Datadog intake to send Agent data to.
@@ -228,7 +228,7 @@ datadog:
     ## Enable this to allow log collection for all containers.
     ## ref: https://docs.datadoghq.com/agent/basic_agent_usage/kubernetes/#log-collection-setup
     #
-    containerCollectAll: false
+    containerCollectAll: true
 
     ## @param containerUseFiles - boolean - optional - default: true
     ## Collect logs from files in /var/log/pods instead of using container runtime API.
