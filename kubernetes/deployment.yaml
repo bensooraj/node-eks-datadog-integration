@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: eks-datadog-demo-node-app
   annotations:
-    ad.datadoghq.com/eks-datadog-demo-node-app.logs: '[{"source":"eks-datadog-demo-node-app","service":"eks-datadog-demo-node-app"}]'  
+    ad.datadoghq.com/eks-datadog-demo-node-app.logs: '[{"source":"nodejs","service":"eks-datadog-demo-node-app"}]'  
   labels:
     tags.datadoghq.com/env: "test"
     tags.datadoghq.com/service: "eks-datadog-demo-node-app"
@@ -16,7 +16,7 @@ spec:
   template:
     metadata:
       annotations:
-        ad.datadoghq.com/eks-datadog-demo-node-app.logs: '[{"source":"eks-datadog-demo-node-app","service":"eks-datadog-demo-node-app"}]'
+        ad.datadoghq.com/eks-datadog-demo-node-app.logs: '[{"source":"nodejs","service":"eks-datadog-demo-node-app"}]'
       labels:
         app: eks-datadog-demo-node-app
         tags.datadoghq.com/env: "test"
